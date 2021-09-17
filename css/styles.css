@@ -1,34 +1,45 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
-h1 {  
+h1, h2, h3, h4, h5, h6 {  
+    font-weight: 700;
+}
+
+p{
+    color: #8f8f8f;
+}
+
+/*Headings*/
+.big-heading {
     font-size: 3.5rem;  
     line-height: 1.5;  
     font-weight: 900;
     margin-bottom: 2rem;
 }
 
-h2 {
-    font-weight: 700;
+.section-heading {
     font-size: 3rem;
     line-height: 1.5;
 }
 
-h3 {
-    font-weight: 600;
-    font-size: 1.5rem;
+/* Containers */
+
+.container-fluid{
+    padding: 7% 15%;
 }
 
-/*Header*/
+/* Sections */
 
-#title { 
+.colored-section {
     background-color: #ff4c68;
     color: white;
 }
 
-.container-fluid{
-    padding: 3% 15%;
+.white-section {
+    background-color: white;
+    color: black;
 }
 
 /*Navigation Bar*/
@@ -52,11 +63,20 @@ h3 {
     font-weight: 300;
 }
 
+/*Header*/
+
+#title .container-fluid {
+    padding: 3% 15% 7%;    
+    text-align:left;
+}
+
 /* Header Content */
 
 .iphone-img {
     width: 60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 33%;
 }
 
 .download-button {
@@ -66,16 +86,14 @@ h3 {
 
 /* Features */
 #features {
-    background-color: white;
-    padding: 7% 15%;
+    position: relative;
 }
 
-#features p{
-    color: #8f8f8f;
+.feature-title {
+    font-size: 1.5rem;
 }
 
 .feature-box {
-    text-align: center;
     padding: 5%;
 }
 
@@ -92,8 +110,10 @@ h3 {
 
 #testimonials {
     background-color: #ef8172;
-    color: white;
-    text-align: center;
+}
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .testimonial-image {
@@ -103,7 +123,6 @@ h3 {
 }
 
 .carousel-item {
-    padding: 7% 20%;
 }
 
 /* Press */
@@ -111,7 +130,6 @@ h3 {
 #press {
     background-color: #ef8172; 
     padding-bottom: 30px;
-    text-align: center;
 }
 
 .press-image {
@@ -122,9 +140,33 @@ h3 {
 /* Pricing */
 #pricing {
     padding: 5%;
-    text-align: center;
 }
 
 .pricing-column {
     padding: 3%;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Call to action section */
+
+/* Footer */
+
+.footer-icon {
+    margin: 10px 10px 20px;
+}
+
+
+@media (max-width:1024px) {
+    .iphone-img {
+        position: static;
+        transform: rotate(0deg);
+    }
+
+    #title {
+        text-align: center;
+    }
 }
